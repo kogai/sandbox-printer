@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		519F61675509C38BA703B10C /* Pods_sandbox_printer__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B43D62C863E1360DCE0D60F /* Pods_sandbox_printer__macOS_.framework */; };
 		53C6355025B6667C00CB1D4F /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C6354F25B6667C00CB1D4F /* Tests_iOS.swift */; };
 		53C6355B25B6667C00CB1D4F /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C6355A25B6667C00CB1D4F /* Tests_macOS.swift */; };
 		53C6355D25B6667C00CB1D4F /* sandbox_printerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C6353425B6667B00CB1D4F /* sandbox_printerApp.swift */; };
@@ -15,6 +16,7 @@
 		53C6356025B6667C00CB1D4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C6353525B6667B00CB1D4F /* ContentView.swift */; };
 		53C6356125B6667C00CB1D4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C6353625B6667B00CB1D4F /* Assets.xcassets */; };
 		53C6356225B6667C00CB1D4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C6353625B6667B00CB1D4F /* Assets.xcassets */; };
+		FFE3BC15B48D72427325101A /* Pods_sandbox_printer__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF6D2A1A24AEC6047B9C27A /* Pods_sandbox_printer__iOS_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42FB86A8695E81783F4F3F7F /* Pods-sandbox-printer (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sandbox-printer (macOS).debug.xcconfig"; path = "Target Support Files/Pods-sandbox-printer (macOS)/Pods-sandbox-printer (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		439C34C04F32518C9196F455 /* Pods-sandbox-printer (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sandbox-printer (iOS).debug.xcconfig"; path = "Target Support Files/Pods-sandbox-printer (iOS)/Pods-sandbox-printer (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		53C6353425B6667B00CB1D4F /* sandbox_printerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandbox_printerApp.swift; sourceTree = "<group>"; };
 		53C6353525B6667B00CB1D4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		53C6353625B6667B00CB1D4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		53C6355625B6667C00CB1D4F /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C6355A25B6667C00CB1D4F /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		53C6355C25B6667C00CB1D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		928DD80ED03CF2A9326372DB /* Pods-sandbox-printer (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sandbox-printer (iOS).release.xcconfig"; path = "Target Support Files/Pods-sandbox-printer (iOS)/Pods-sandbox-printer (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		9B43D62C863E1360DCE0D60F /* Pods_sandbox_printer__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sandbox_printer__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B414B0029319B3B973632AAB /* Pods-sandbox-printer (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sandbox-printer (macOS).release.xcconfig"; path = "Target Support Files/Pods-sandbox-printer (macOS)/Pods-sandbox-printer (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		DAF6D2A1A24AEC6047B9C27A /* Pods_sandbox_printer__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sandbox_printer__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFE3BC15B48D72427325101A /* Pods_sandbox_printer__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				519F61675509C38BA703B10C /* Pods_sandbox_printer__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +102,8 @@
 				53C6354E25B6667C00CB1D4F /* Tests iOS */,
 				53C6355925B6667C00CB1D4F /* Tests macOS */,
 				53C6353C25B6667B00CB1D4F /* Products */,
+				B50F37ACD24C880B09D11C8C /* Pods */,
+				9A6BA372058F965F254F078C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +163,27 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		9A6BA372058F965F254F078C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAF6D2A1A24AEC6047B9C27A /* Pods_sandbox_printer__iOS_.framework */,
+				9B43D62C863E1360DCE0D60F /* Pods_sandbox_printer__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B50F37ACD24C880B09D11C8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				439C34C04F32518C9196F455 /* Pods-sandbox-printer (iOS).debug.xcconfig */,
+				928DD80ED03CF2A9326372DB /* Pods-sandbox-printer (iOS).release.xcconfig */,
+				42FB86A8695E81783F4F3F7F /* Pods-sandbox-printer (macOS).debug.xcconfig */,
+				B414B0029319B3B973632AAB /* Pods-sandbox-printer (macOS).release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53C6356525B6667C00CB1D4F /* Build configuration list for PBXNativeTarget "sandbox-printer (iOS)" */;
 			buildPhases = (
+				82EB2EAD36E3E223C3A9FCC9 /* [CP] Check Pods Manifest.lock */,
 				53C6353725B6667B00CB1D4F /* Sources */,
 				53C6353825B6667B00CB1D4F /* Frameworks */,
 				53C6353925B6667B00CB1D4F /* Resources */,
+				5F2266A0C242E5367F7595E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53C6356825B6667C00CB1D4F /* Build configuration list for PBXNativeTarget "sandbox-printer (macOS)" */;
 			buildPhases = (
+				5D3C0FE1F8391D8BA4643E59 /* [CP] Check Pods Manifest.lock */,
 				53C6353F25B6667B00CB1D4F /* Sources */,
 				53C6354025B6667B00CB1D4F /* Frameworks */,
 				53C6354125B6667B00CB1D4F /* Resources */,
@@ -302,6 +338,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D3C0FE1F8391D8BA4643E59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sandbox-printer (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F2266A0C242E5367F7595E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sandbox-printer (iOS)/Pods-sandbox-printer (iOS)-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sandbox-printer (iOS)/Pods-sandbox-printer (iOS)-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sandbox-printer (iOS)/Pods-sandbox-printer (iOS)-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82EB2EAD36E3E223C3A9FCC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sandbox-printer (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		53C6353725B6667B00CB1D4F /* Sources */ = {
@@ -467,6 +567,7 @@
 		};
 		53C6356625B6667C00CB1D4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 439C34C04F32518C9196F455 /* Pods-sandbox-printer (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +589,7 @@
 		};
 		53C6356725B6667C00CB1D4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928DD80ED03CF2A9326372DB /* Pods-sandbox-printer (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -510,6 +612,7 @@
 		};
 		53C6356925B6667C00CB1D4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42FB86A8695E81783F4F3F7F /* Pods-sandbox-printer (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -532,6 +635,7 @@
 		};
 		53C6356A25B6667C00CB1D4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B414B0029319B3B973632AAB /* Pods-sandbox-printer (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
