@@ -8,7 +8,7 @@ target 'sandbox-printer (iOS)' do
   # Pods for sandbox-printer (iOS)
   pod 'StarIO', '2.8.2'
   pod 'StarIO_Extension', '1.15.0'
-  pod 'SMCloudServices', '1.5.1'
+#  pod 'SMCloudServices', '1.5.1'
   pod 'StarIODeviceSetting', '1.0.0'
 end
 

@@ -39,6 +39,7 @@
 /* Begin PBXFileReference section */
 		42FB86A8695E81783F4F3F7F /* Pods-sandbox-printer (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sandbox-printer (macOS).debug.xcconfig"; path = "Target Support Files/Pods-sandbox-printer (macOS)/Pods-sandbox-printer (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 		439C34C04F32518C9196F455 /* Pods-sandbox-printer (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sandbox-printer (iOS).debug.xcconfig"; path = "Target Support Files/Pods-sandbox-printer (iOS)/Pods-sandbox-printer (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		533FC5B525B6A11300C554D6 /* StarIO_Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StarIO_Extension-Bridging-Header.h"; sourceTree = "<group>"; };
 		53C6353425B6667B00CB1D4F /* sandbox_printerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandbox_printerApp.swift; sourceTree = "<group>"; };
 		53C6353525B6667B00CB1D4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		53C6353625B6667B00CB1D4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 			children = (
 				53C6353425B6667B00CB1D4F /* sandbox_printerApp.swift */,
 				53C6353525B6667B00CB1D4F /* ContentView.swift */,
+				533FC5B525B6A11300C554D6 /* StarIO_Extension-Bridging-Header.h */,
 				53C6353625B6667B00CB1D4F /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -180,7 +182,6 @@
 				42FB86A8695E81783F4F3F7F /* Pods-sandbox-printer (macOS).debug.xcconfig */,
 				B414B0029319B3B973632AAB /* Pods-sandbox-printer (macOS).release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -195,7 +196,6 @@
 				53C6353725B6667B00CB1D4F /* Sources */,
 				53C6353825B6667B00CB1D4F /* Frameworks */,
 				53C6353925B6667B00CB1D4F /* Resources */,
-				5F2266A0C242E5367F7595E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -360,23 +360,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5F2266A0C242E5367F7595E7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sandbox-printer (iOS)/Pods-sandbox-printer (iOS)-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sandbox-printer (iOS)/Pods-sandbox-printer (iOS)-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sandbox-printer (iOS)/Pods-sandbox-printer (iOS)-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		82EB2EAD36E3E223C3A9FCC9 /* [CP] Check Pods Manifest.lock */ = {
@@ -572,7 +555,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VC7XZVC9R;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -582,8 +567,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kogai.sandbox-printer";
 				PRODUCT_NAME = "sandbox-printer";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Shared/StarIO_Extension-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -594,7 +580,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VC7XZVC9R;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -604,8 +592,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kogai.sandbox-printer";
 				PRODUCT_NAME = "sandbox-printer";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Shared/StarIO_Extension-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
